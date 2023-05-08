@@ -1,0 +1,457 @@
+<html lang="en" foxified=""><head>
+  <meta charset="UTF-8">
+  
+
+    <!-- <link rel="apple-touch-icon" type="image/png" href="https://www.iconspng.com/images/developer-icon/developer-icon.jpg"> -->
+
+    <!-- <meta name="apple-mobile-web-app-title" content="SANKET RAIKAR"> -->
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="https://www.iconspng.com/images/developer-icon/developer-icon.jpg"> -->
+
+    <!-- <link rel="mask-icon" type="image/x-icon" href="https://www.iconspng.com/images/developer-icon/developer-icon.jpg"> -->
+
+
+
+  
+  <title>SANKET RAIKAR - Personal Portfolio Website</title>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF8F0;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: #DE6E4B;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 50;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  font-size:15px;
+  font-weight:bold;
+}
+
+#underP {
+  background-color: #DE6E4B;
+  display: flex;
+    justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  font-size:20px;
+}
+
+<!-- #underP { -->
+  <!-- background-color: #DE6E4B; -->
+  <!-- color: #fff; -->
+  <!-- padding: 0px; -->
+  <!-- height: 10px; -->
+  <!-- text-align: center; -->
+<!-- } -->
+
+
+nav a , .btop a{
+  color: #fff;
+  margin-right: 30px;
+  text-decoration: none;
+  
+}
+
+nav a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+header {
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1540397106260-e24a507a08ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=761&q=80);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+}
+
+header::after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+
+header p {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;-tile
+}
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+section #contact h2 {
+font-size:120px;
+}
+
+section h2 {
+  margin: 0;
+  
+}
+
+section p {
+  margin-top: 0;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 810px;
+  margin: 20px auto 0;
+}
+
+.project-tile {
+  margin: 10px;
+  max-width: 240px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+}
+
+.project-tile img {
+  width: 100%;
+  height:100%;
+}
+
+.project-tile p {
+  font-size: 20px;
+  margin-top: 10px; 
+  color: #000;
+}
+
+.bg-blue {
+  background-color: #7FD1B9;
+  color: #fff;
+}
+
+.social-ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  margin: 10;
+}
+
+<!-- .social-ul a { -->
+  <!-- border-radius: 50%; -->
+  <!-- color: #fff; -->
+  <!-- display: inline-flex; -->
+  <!-- align-items: center; -->
+  <!-- justify-content: center; -->
+  <!-- font-size: 25px; -->
+  <!-- margin: 5px 10px; -->
+  <!-- width: 50px; -->
+  <!-- height: 50px; -->
+  <!-- text-decoration: none; -->
+<!-- } -->
+.social-ul .whatsapp a{
+	background:#25D366; 
+	border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 5px 10px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+.social-ul .facebook a{
+	background:#3b5999; 
+	border-radius: 50%;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	margin: 5px 10px;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+}
+
+.social-ul .instagram a{
+	background:#e4405f; 
+	border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 5px 10px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+.social-ul .mail a{
+	background:red; 
+	border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 5px 10px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+.social-ul .call a{
+	background:white; 
+	border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 5px 10px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+footer {
+  background-color: #DE6E4B;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+@media (max-width: 440px) {
+  section {
+    padding: 20px;
+  }
+  
+  
+}
+
+.project-tile .conatctme
+{
+margin:0;
+padding:0;
+width:50%;
+height:auto;
+}
+
+#navbar h1{
+}
+
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+ <script>
+ function working() {
+ window.alert("We are working on it");
+ document.getElementById("welcome-section").scrollIntoView();
+ };
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+	
+  <div id="underP">
+  <h4 color>Under Work!!!!!</h4><br>
+</div>
+<nav id="navbar">
+  <a href="#welcome-section">About Me</a>
+  <a href="#projects">Services</a>
+  <a onclick="working()">E Book</a>
+  <a onclick="working()">Tools</a>
+  <a onclick="working()">Courses</a>
+  <a href="#contact">Contact Me</a>
+</nav>
+
+<header id="welcome-section">
+<section  style="background-color:rgba(255, 168, 71, 0.5)";>
+  
+  <h2>HELLO!!!</h2>
+  <h1>MY NAME IS <b><i>SANKET RAIKAR</i></b></h1>
+  <p><b>I am a Web Developer ( Digital Marketer )</b></p>
+  <ul class="social-ul">
+    <li class="instagram"><a id="profile-link" href="https://www.instagram.com/sanket_raikar.11/" target="_blank" style="font-size:30px;"><i class="fab fa-instagram"></i></a></li>
+    <li class="whatsapp"><a href="https://wa.link/ph2bub" target="_blank" style="font-size:30px;"><i class="fab fa-whatsapp"></i></a></li>
+    <li class="call"><a href='tel:+918088123486'><img class="conatctme" src="https://cdn-icons-png.flaticon.com/512/30/30415.png?w=740&t=st=1682079963~exp=1682080563~hmac=aab41ccee18c1a00fdd21a63bbd201098442aab5edd8e352edf9e5b12b9832f5" alt="call icon" height="34px" width="34px"></a></li>   
+    <li class="mail"><a href="mailto:sanketraikar2003@gmail.com"><img class="conatctme" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Android_Email_4.4_Icon.png" alt="mail icon" height="34px" width="34px"></a></li>   
+    <li class="facebook"><a href="https://www.facebook.com/sanket.raikar.31" target="_blank" style="font-size:30px;"><i class="fab fa-facebook"></i></a></li>   
+  </ul>
+  
+</section>
+</header>
+
+<section id="projects">
+  <h2>WHAT I OFFER</h2>
+  <div class="projects-container">
+  <div class="project-tile">
+    <img src="https://img.freepik.com/free-vector/setup-concept-illustration_114360-5023.jpg?w=740&t=st=1682078357~exp=1682078957~hmac=eabdd6e5c0fee5ffc81b77ebc4286a2b8de00a96f2b1479eb0c640bd979b4765" alt="Web Design P">
+    <h2>Web Design</h2> 
+	<h1 class="Contact" ><h5>Contact Us <br>
+	<ul class="social-ul">
+    <li class="whatsapp"><a href="https://wa.link/ph2bub" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    <li class="instagram"><a id="profile-link" href="https://www.instagram.com/sanket_raikar.11/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sanket.raikar.31" target="_blank"><i class="fab fa-facebook"></i></a></li>   
+  </ul>
+  </h5>
+	</h1>
+
+  </div>
+    
+  <div  class="project-tile">
+    <img src="https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg?w=740&t=st=1682077459~exp=1682078059~hmac=514f31e954d8462f1204c6cc90b3a5cb863f3a721a3dd617fe48a76a5b835153" alt="App Design P">
+	<h2>App Design</h2> 
+	<h1 class="Contact" ><h5>Contact Us <br>
+	<ul class="social-ul">
+    <li class="whatsapp"><a href="https://wa.link/ph2bub" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    <li class="instagram"><a id="profile-link" href="https://www.instagram.com/sanket_raikar.11/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sanket.raikar.31" target="_blank"><i class="fab fa-facebook"></i></a></li>   
+  </ul>
+  </h5>
+	</h1>
+	
+  </div>
+    
+  <div class="project-tile">
+    <img src="https://img.freepik.com/premium-vector/web-design-concept-3d-illustration-icon-composition-with-program-interface-drawing-graphic-elements-site-layout-professional-software-designer-vector-illustration-modern-web-design_198565-1673.jpg?w=740" alt="Graphic Design P">
+	<h2>Graphic Design</h2> 
+	<h1 class="Contact" ><h5>Contact Us <br>
+	<ul class="social-ul">
+    <li class="whatsapp"><a href="https://wa.link/ph2bub" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    <li class="instagram"><a id="profile-link" href="https://www.instagram.com/sanket_raikar.11/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sanket.raikar.31" target="_blank"><i class="fab fa-facebook"></i></a></li>   
+  </ul>
+  </h5>
+	</h1>
+  </div>
+  
+    
+ 
+    
+  <div class="project-tile">
+    <img src="https://img.freepik.com/free-vector/gradient-affiliate-marketing-illustration_52683-83382.jpg?w=740&t=st=1682078910~exp=1682079510~hmac=da036eb199add6a6b14f90d525d1bcae704a6cfb23bbca13022ce463171d98c9" alt="Affiliate  Marketing P">
+	<h2>Affiliate  Marketing</h2> 
+	<h1 class="Contact" ><h5>Contact Us <br>
+	<ul class="social-ul">
+    <li class="whatsapp"><a href="https://wa.link/ph2bub" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    <li class="instagram"><a id="profile-link" href="https://www.instagram.com/sanket_raikar.11/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sanket.raikar.31" target="_blank"><i class="fab fa-facebook"></i></a></li>   
+  </ul>
+  </h5>
+	</h1>
+  </div>
+  
+   <div class="project-tile">
+    <img src="https://img.freepik.com/premium-photo/social-media-icons-logos-with-3d-space-rocket-digital-social-media-marketing-background_125322-391.jpg?w=996" alt="Digital Marketing P">
+    <h2>Digital Marketing</h2>
+	<h1 class="Contact" ><h5>Contact Us <br>
+	<ul class="social-ul">
+    <li class="whatsapp"><a href="https://wa.link/ph2bub" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    <li class="instagram"><a id="profile-link" href="https://www.instagram.com/sanket_raikar.11/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sanket.raikar.31" target="_blank"><i class="fab fa-facebook"></i></a></li>   
+  </ul>
+  </h5>
+	</h1>
+  </div>
+  
+  <div class="project-tile">
+    <img src="https://img.freepik.com/premium-vector/influencer-marketing-concept-flat-vector-illustration-with-character-blogger-brand-ambassador-promotion-services-goods-her-followers-online-live-stream-with-product-presentation-smm_534430-358.jpg?w=740" alt="Influencer Marketing P">
+	<h2>Influencer Marketing</h2> 
+	<h1 class="Contact" ><h5>Contact Us <br>
+	<ul class="social-ul">
+    <li class="whatsapp"><a href="https://wa.link/ph2bub" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    <li class="instagram"><a id="profile-link" href="https://www.instagram.com/sanket_raikar.11/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sanket.raikar.31" target="_blank"><i class="fab fa-facebook"></i></a></li>   
+  </ul>
+  </h5>
+	</h1>
+  </div>
+</section>
+
+
+<section id="contact" class="bg-blue">
+  
+  <h1>Contact</h1>
+  <p>You can catch me on</p>
+  <div class="projects-container">
+  <div class="project-tile">
+  <a href="https://wa.link/ph2bub" target="_blank">
+	<img class="conatctme" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="whatsapp icon" width="100px" height="100px">
+	</a>
+  </div>
+  <div class="project-tile">
+  <a href="mailto:sanketraikar2003@gmail.com">
+  <img class="conatctme" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Android_Email_4.4_Icon.png" alt="mail icon">
+  </a>
+  </div>
+  <div class="project-tile">
+  <a href='tel:+918088123486'>
+  <img class="conatctme" src="https://cdn-icons-png.flaticon.com/512/30/30415.png?w=740&t=st=1682079963~exp=1682080563~hmac=aab41ccee18c1a00fdd21a63bbd201098442aab5edd8e352edf9e5b12b9832f5" alt="call icon">
+  </a>
+ </div>
+  </div>
+  <div align=right class="btop"><a href="#">Back To Top</a></div>
+</section>
+<footer>
+  &copy;<span><b>Sanket Raikar</b>. All rights reserved.</span>
+</footer>
+</body>
+</html>
